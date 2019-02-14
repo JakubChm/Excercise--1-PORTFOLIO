@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&subset=latin-ext');
+
+/* font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; */
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 0 auto;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Header (sekcja1) */
+header.header {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #29a6dc;
+    text-transform: uppercase;
+    color: white;
+}
+
+header>* {
+    position: absolute;
+}
+
+header p,
+header h1,
+header h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+header button:hover {
+    color: #111;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Zmienialne */
+/* Pasuje na portrait */
+
+header div.introduction {
+    z-index: 1;
+    bottom: 55%;
+    left: 0;
+    right: 0;
+    margin: 5% 5% 0 5%;
+    text-align: center;
+}
+
+header p {
+    margin-bottom: 5%;
+    font-size: calc(40px + (120 - 40) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 700;
+}
+
+header h1 {
+    font-size: calc(20px + (60 - 20) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 700;
+
+}
+
+header h2 {
+    font-size: calc(20px + (60 - 20) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 400;
+}
+
+header button {
+    margin-top: 15%;
+    padding: 0 calc(100vw/10.6666666);
+    line-height: calc(32px + (90 - 32) * ((100vw - 319px) /(1920 - 319)));
+    font-size: calc(12px + (36 - 12) * ((100vw - 319px) / (1920 - 319)));
+    font-family: 'saira', sans-serif;
+    background: transparent;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+    border: 1px solid white;
+    transition: .3s;
+}
+
+
+header .header-photo {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+}
+
+/* KONIEC Zmienialnego */
+
+/* RWD orientation landscape*/
+
+@media (orientation: landscape) and (min-width: 533px) {
+    header div.introduction {
+        top: 5%;
+        left: 0;
+        right: auto;
+        margin: 0 5%;
+        text-align: left;
+    }
+
+    header p {
+        margin-bottom: 5%;
+        font-size: calc(40px + (120 - 40) * ((100vw - 319px) / (1920 - 319)));
+        font-weight: 700;
+    }
+
+    header h1 {
+        font-size: calc(20px + (60 - 20) * ((100vw - 319px) / (1920 - 319)));
+        font-weight: 700;
+
+    }
+
+    header h2 {
+        font-size: calc(20px + (60 - 20) * ((100vw - 319px) / (1920 - 319)));
+        font-weight: 400;
+    }
+
+    header button {
+        margin-top: 20%;
+        padding: 0 30px;
+        font-family: 'saira', sans-serif;
+        background: transparent;
+        text-transform: uppercase;
+        color: white;
+        line-height: calc(32px + (90 - 32) * ((100vw - 319px) /(1920 - 319)));
+        font-size: calc(12px + (36 - 12) * ((100vw - 319px) / (1920 - 319)));
+        font-weight: 300;
+        border: 1px solid white;
+        transform: .3s;
+    }
+
+    header .header-photo {
+        bottom: 0%;
+        left: 60%;
+        height: 95%;
+    }
+}
+
+
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header .header-photo {
+        bottom: 0%;
+        left: 60%;
+        height: 95%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+    header div.introduction {
+        z-index: 1;
+        top: 5%;
+        right: 45%;
+        margin: 0 5%;
+        text-align: left;
+    }
+
+    header .header-photo {
+        bottom: 0%;
+        right: 0;
+        height: 95%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header div.introduction {
+        z-index: 1;
+        top: 20%;
+        right: 45%;
+        margin: 0 5%;
+        text-align: left;
+    }
+
+    header .header-photo {
+        bottom: 0%;
+        left: 45%;
+        height: 95%;
+    }
+
+}
+
+
+@media (orientation: landscape) and (min-width: 1350px) {
+    header .header-photo {
+        bottom: 0%;
+        left: 50%;
+        height: 95%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    header .header-photo {
+        bottom: 0%;
+        right: 0;
+        left: auto;
+        height: 95%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1920px) {
+    header .header-photo {
+        bottom: 0%;
+        right: 0;
+        left: auto;
+        height: 95%;
+    }
+
+    header p {
+        font-size: 120px;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 60px;
+    }
+
+    header button {
+        line-height: 90px;
+        font-size: 36px;
+    }
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////section 2 Umiejki */
+.features {
+    text-align: center;
+    margin: 0 auto;
+    color: #111;
+    padding-bottom: 2.5%
+}
+
+.features h2 {
+    line-height: 130%;
+    text-transform: uppercase;
+    padding: 5% 10%;
+    font-family: 'saira condensed', sans-serif;
+    font-size: calc(24px + (60 - 24) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 700;
+
+}
+
+.flex-cotainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.feature img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.features h3 {
+    font-family: 'saira condensed', sans-serif;
+    font-size: calc(18px + (36 - 18) * ((100vw - 319px) / (1920 - 319)));
+    padding: 5%;
+    line-height: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features p {
+    font-family: 'saira', sans-serif;
+    font-size: calc(12px + (21 - 12) * ((100vw - 319px) / (1920 - 319)));
+    padding: 5%;
+    line-height: 130%;
+    font-weight: 300;
+}
+
+@media (min-width:700px) {
+    .flex-cotainer {
+        flex-direction: row;
+        width: 90%;
+        max-width: calc(740px *2);
+        margin: 0 auto;
+    }
+
+    .feature {
+        margin: 0;
+        display: flex;
+        flex-basis: 33.333333333%;
+        flex-direction: column;
+    }
+
+    .feature .feature-description {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+
+    .feature img {
+        width: calc(200px + (375 - 200) * ((100vw - 700px) / (1920 - 700)));
+    }
+
+    .features h3 {
+        font-size: 21px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width:1350px) {
+    .features h3 {
+        font-size: calc(18px + (30 - 18) * ((100vw - 319px) / (1920 - 319)));
+    }
+}
+
+@media (orientation: landscape) and (min-width:1650px) {
+    .features h2 {
+        font-size: 60px;
+    }
+
+    .features h3 {
+        font-size: 36px;
+    }
+
+    .features p {
+        font-size: 21px;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Sekcja 3 Portfolio */
+
+.portfolio {
+    background-color: #1e1e1e;
+    padding-bottom: 2.5%
+}
+
+.portfolio .project-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    max-width: calc(740px *2);
+    margin-bottom: 2.5%;
+}
+
+.photo img {
+    width: 100%;
+}
+
+
+
+.portfolio h2 {
+    padding: 5% 10%;
+    font-family: 'saira condensed', sans-serif;
+    font-size: calc(24px + (60 - 24) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 700;
+    line-height: 120%;
+    color: white;
+    text-align: center;
+}
+
+.about h3 {
+    padding: 5% 10%;
+    margin-right: 10%;
+    font-family: 'saira', sans-serif;
+    font-size: calc(18px + (36 - 18) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+}
+
+.about p {
+    padding: 10% 10%;
+    font-family: 'saira', sans-serif;
+    font-size: calc(12px + (21 - 12) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 300;
+    line-height: 180%;
+    color: white;
+    text-align: left;
+}
+
+.portfolio .project-name:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+.portfolio .project-name:nth-of-type(even) {
+    background-color: #0170ba;
+
+}
+
+
+@media (min-width: 700px) {
+    .portfolio .project-name {
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto 2.5%;
+    }
+
+    .portfolio .photo {
+        flex-basis: 50%;
+    }
+
+    .photo img {
+        height: 100%;
+        /* object-position: center;
+        object-fit: cover; */
+        display: block;
+    }
+
+    .portfolio .about {
+        flex-basis: 50%
+    }
+
+
+    .portfolio .project-name:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+    }
+
+    .portfolio .project-name:nth-of-type(even) h3 {
+        margin-left: 10%;
+        margin-right: 0%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .portfolio h2 {
+        font-size: 60px;
+    }
+
+    .about h3 {
+        font-size: 21px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .portfolio .project-name {
+        width: 90%;
+        max-width: calc(740px*2);
+        max-height: 440px;
+    }
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Sekcja 4 motto */
+
+.motto {
+    background-image: url('../images/motto.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.motto .background {
+    background: rgba(0, 63, 114, 0.5);
+}
+
+.motto .content {
+    width: 90%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+
+
+.motto h2 {
+    padding: 10% 5% 15%;
+    font-family: 'saira condensed', sans-serif;
+    font-size: calc(24px + (60 - 24) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 700;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+.motto blockquote {
+    padding: 0 5% 10%;
+    font-family: 'saira', sans-serif;
+    font-size: calc(18px + (48 - 18) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 400;
+    color: #eee;
+}
+
+.motto p {
+    padding: 0 5% 10%;
+    font-family: 'saira', sans-serif;
+    font-size: calc(12px + (24 - 12) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 400;
+    color: #eee;
+}
+
+@media (orientation: landscape) and (min-width: 500px) {
+    .motto .content {
+        width: 70%;
+    }
+
+    .motto h2 {
+        padding: 10% 5% 5%;
+        font-size: calc(24px + (60 - 24) * ((100vw - 500px) / (1920 - 500)));
+    }
+
+    .motto blockquote {
+        padding: 0 5% 5%;
+        font-size: calc(16px + (48 - 16) * ((100vw - 500px) / (1920 - 500)));
+    }
+
+    .motto p {
+        padding: 0 5% 10%;
+        font-size: calc(12px + (24 - 12) * ((100vw - 500px) / (1920 - 500)));
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Sekcja 5 HOBBY */
+.hobby {
+    text-align: center;
+    max-width: 1920px;
+}
+
+.hobby h2 {
+    padding: 10% 5%;
+    font-family: 'saira condensed', sans-serif;
+    font-size: calc(24px + (60 - 24) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 700;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.hobby .flex-hobby {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.hobby .overflow {
+    position: relative;
+    overflow: hidden;
+}
+
+.hobby .hobby-photo {
+    transition: .3s;
+}
+
+.hobby .hobby-photo img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 40vh;
+}
+
+.hobby .small-display {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    font-family: 'saira', sans-serif;
+    text-transform: uppercase;
+    font-size: calc(24px + (50 - 24) * ((100vw - 319px) / (1920 - 319)));
+    background: rgba(17, 17, 17, 0.5);
+    line-height: 200%;
+    font-weight: 400;
+    color: #eee;
+}
+
+@media (min-width: 700px) {
+    .hobby .flex-hobby {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hobby h2 {
+        padding: 5% 5%;
+        font-size: calc(24px + (60 - 24) * ((100vw - 700px) / (1920 - 700)));
+    }
+
+    .hobby .overflow {
+        width: 50%;
+    }
+
+    .hobby .overflow img {
+        width: 100%;
+
+    }
+
+    .hobby .small-display {
+        font-size: calc(24px + (50 - 24) * ((100vw - 700px) / (1920 - 700)));
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .hobby .small-display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        height: 100%;
+        margin: 0 auto;
+
+    }
+
+
+    .hobby .hobby-photo:hover,
+    .hobby .small-display:hover {
+        opacity: 1;
+        background-color: rgba(255, 79, 44, .5);
+        transform: scale(1.3);
+        cursor: default;
+
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Sekcja 6 KONTAKT */
+.socials {
+    background-color: #111;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.socials h2 {
+    padding: 5% 5%;
+    font-family: 'saira condensed', sans-serif;
+    font-size: calc(24px + (60 - 24) * ((100vw - 319px) / (1920 - 319)));
+    font-weight: 700;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+.socials .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.socials input,
+.socials textarea,
+.socials button {
+    display: block;
+    width: 100%;
+    max-width: 440px;
+    padding: 0 2.5%;
+    margin: 5% auto;
+    font-family: 'saira', sans-serif;
+    font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.socials input {
+    height: calc(36px + (64 - 36) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.socials textarea {
+    height: calc(108px + (240 - 108) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.socials button {
+    line-height: calc(40px + (72 - 30) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
+    background-color: transparent;
+    color: white;
+    border: 2px solid #eee;
+    transition: .3s;
+}
+
+.socials button:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+.socials .contacts {
+    margin: 5% 0;
+    text-align: left;
+    max-width: 440px;
+
+}
+
+.socials .contact {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0 0;
+    opacity: .8;
+}
+
+.socials .contact:hover {
+    opacity: 1;
+}
+
+.socials .contact a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'saira', sans-serif;
+    font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+.socials .contact img {
+    height: calc(36px + (64 - 36) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.socials .contact p {
+    padding-left: 20px;
+}
+
+@media (min-width:640px) {
+    .socials .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        width: 90%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1024px) {
+    .socials .formularz {
+        width: 440px;
+    }
+
+    .socials .contacts {
+        width: 440px;
+    }
+}
+
+/* ///////////////footer */
+
+.stopka {
+    font-family: 'saira', sans-serif;
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #111;
+    background-color: #29a9df;
+    text-align: center;
+    padding: 1.5%;
+}
