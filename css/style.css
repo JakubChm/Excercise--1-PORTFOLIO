@@ -468,7 +468,7 @@ header .header-photo {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     text-align: center;
 }
 
@@ -527,6 +527,12 @@ header .header-photo {
     .motto p {
         padding: 0 5% 10%;
         font-size: calc(12px + (24 - 12) * ((100vw - 500px) / (1920 - 500)));
+    }
+
+    @media (min-width: 1024px) {
+        .motto {
+            background-attachment: scroll;
+        }
     }
 }
 
