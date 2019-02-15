@@ -531,7 +531,7 @@ header .header-photo {
 
     @media (min-width: 1024px) {
         .motto {
-            background-attachment: scroll;
+            background-attachment: fixed;
         }
     }
 }
