@@ -468,7 +468,7 @@ header .header-photo {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: initial;
     text-align: center;
 }
 
